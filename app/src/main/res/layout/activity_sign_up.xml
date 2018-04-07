@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.jains.loginpage.SignUp">
+
+    <TextView
+        android:text="Enter your Credentials "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cred"
+        android:textSize="32sp"
+        android:textColor="@color/purple"
+        android:typeface="serif"
+        android:textStyle="bold|italic"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/fullname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cred"
+        android:layout_marginTop="30dp"
+        android:inputType="textPersonName"
+        android:hint="Full Name"
+        android:textSize="20sp"
+        android:focusable="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/emailid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/fullname"
+        android:layout_alignStart="@+id/fullname"
+        android:layout_below="@+id/fullname"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:hint="Email-id"
+        android:textSize="20sp"
+        android:focusable="true"/>
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="Password"
+        android:textSize="20sp"
+        android:layout_below="@+id/emailid"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="55dp"
+        android:text="SUBMIT"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/err_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/submit"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="58dp"
+        android:text="" />
+
+
+</RelativeLayout>
